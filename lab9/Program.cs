@@ -1,6 +1,6 @@
 ﻿namespace lab9
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -100,14 +100,14 @@
             ////Вычисление средневзвешенного значения всех дисциплин
             //DisciplineArray fourthDisciplineArray = InputData.InputElementsArray(3);
             //OutputData.ShowElementsArray(fourthDisciplineArray);
-            //OutputData.ShowWeightedAverageCredits(CalculateWeightedAverageCredits(fourthDisciplineArray));
+            //OutputData.ShowWeightedAverageCredits(fourthDisciplineArray);
 
             //OutputData.ShowObjectsCount();
             //OutputData.ShowCollectionsCount();
             #endregion Часть 3
         }
 
-        static double CalculateWeightedAverageCredits(DisciplineArray disciplineArray)
+        public static double CalculateWeightedAverageCredits(DisciplineArray disciplineArray)
         {
             if (disciplineArray.GetLengthArray == 0)
                 return 0;

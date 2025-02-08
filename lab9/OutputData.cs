@@ -60,9 +60,9 @@ namespace lab9
         }
 
         //Вывод средневзвешенных единиц по всем дисциплинам
-        public static void ShowWeightedAverageCredits(double AverageCredits)
+        public static void ShowWeightedAverageCredits(DisciplineArray disciplineArray)
         {
-            Console.WriteLine($"\nСредневзвешенное зачетных единиц по всем дисциплинам: {AverageCredits}");
+            Console.WriteLine($"\nСредневзвешенное зачетных единиц по всем дисциплинам: {Program.CalculateWeightedAverageCredits(disciplineArray)}");
         }
 
         //Вывод количества созданных объектов класса Discipline
